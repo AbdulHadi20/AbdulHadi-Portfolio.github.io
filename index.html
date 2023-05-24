@@ -1,22 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--doctype html tag, indicates that the document is an html doc-->
 <html lang="en">
 
-<head>
+<head> <!--head section, contains all the meta information and links with css files, helps with SEO-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css"> <!--link to external css file, for styling purposes-->
     <script src="https://kit.fontawesome.com/e5dccc8960.js" crossorigin="anonymous"></script>
-    <title>AbdulHadi's Portfolio</title>
+    <!--linking with the online icon kit on www.fontawesome.com-->
+    <title>AbdulHadi's Portfolio</title> <!--title displayed on title bar-->
 </head>
 
-<body>
-    <header>
-        <img src="Media/logo.png" alt="logo-image" class="logo">
+<body> <!--start of the body tag-->
 
-        <nav>
+    <!---------------------------------------------HEADER AND NAVIGATION SECTION--------------------------------------->
+
+    <header> <!--header tag, contains heading logo, navigation links at the top of the page-->
+        <img src="Media/logo.png" alt="logo-image" class="logo"> <!--image tag for placing the logo image-->
+
+        <nav> <!--navigation links for the website-->
             <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
+            <!--link with the class:active to indicate the user is on current page -->
+            <a href="#">Services</a> <!--other navigation links-->
             <a href="#">Projects</a>
             <a href="#">Contact Me</a>
             <a href="#">About Me</a>
@@ -24,47 +29,75 @@
         </nav>
     </header>
 
-    <aside>
-        <img src="Media/main-pic.png" alt="my-main-image">
+    <!-----------------------------------------------------HERO SECTION-------------------------------------------------->
+
+    <aside> <!--to display the image on the side of the page-->
+        <img src="Media/main-pic.png" alt="my-main-image"> <!--image to be displayed for the hero section-->
     </aside>
 
-    <div class="page-headline">
-        <p class="greeting">
-            Hi! My name is
+    <div class="page-headline"> <!--div tag for the hero section texts-->
+        <p class="greeting"> <!--paragraph tag for a small greeting-->
+            Hi ! My name is
         </p>
-        <h1 class="my-name">AbdulHadi</h1>
+        <h1 class="my-name">ABDULHADI</h1> <!--using the heading tag to display name larger-->
 
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iure eos <br>
-            ullam ab deleniti? Quia architecto autem maxime earum? Debitis tempore ab at <br>
-            vero praesentium nostrum quod ullam, amet perferendis?
+        <p class="shortpara"> <!--paragraph tag to display short information-->
+            I am a current student of Metaverseage Training Institute, which is under the <br>
+            Bath Spa University, Ras Al Khaimah. I am pursuing my degree in <br>
+            BSC (Hons) - Creative Computing.
         </p>
 
-        <button class="main-button">
-            Learn More <i class="fa-sharp fa-light fa-arrow-right"></i>
+        <button> <!--button tag to take us to about me page-->
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+            <!--text + the i tag for the icons taken from the internet-->
         </button>
 
     </div>
 
-    <div class="about-me">
-        <div class="col-1">
-            <img src="Media/main-pic.png" alt="my-pic">
-        </div>
+    <!--------------------------------------------------ABOUT ME SECTION----------------------------------------------------->
 
-        <div class="col2">
-            <h2 class="title-aboutme">About Me</h2>
-            <p class="shortpara">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium <br>
-                repellat amet deserunt. Illo unde dignissimos, impedit facilis <br>
-                praesentium cumque iure, consectetur velit aspernatur, ullam tempore. <br>
-                Reiciendis fugiat enim culpa tempore.
-            </p>
+    <div class="about-me">
+        <div class="grid">
+            <div class="col-1">
+                <img src="Media/about-me.jpeg" alt="about-me-pic">
+            </div>
+
+            <div class="col-2">
+                <h2 class="title-aboutme">About Me</h2>
+                <p class="my-info">
+                    My name is AbdulHadi. I am currently a student at Bath Spa University, studying <br>
+                    for a bachelor's degree in Creative Computing. From the start, I was into <br>
+                    computers and always wanted to create my own apps and websites. I started my <br>
+                    computer learning journey with HTML in Grade 8, then followed by basics of C#. <br>
+                    Then I learned C++ in highschool and got pretty good at it. <br> <br>
+
+                    Now in Bath Spa University, I have learned Python, CSS, Javascript basics, and <br>
+                    UI/UX Design. UI/UX is my favorite module in the university. I also have learned <br>
+                    how to effectively tell stories and how ideas are generated and implemented. <br>
+                </p>
+
+                <button>
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </div>
+    <!--------------------------------------------------SERVICES SECTION--------------------------------------------------------------->
 
-    <div class="services-carousel">
-        <div class="ui-ux-design">
-            <h3>UI/UX Design</h3>
+    <div class="services">
+        <h1>SERVICES</h1>
+        <div class="layout">
+            <div class="boxes">
+                <h3>UI/UX DESIGN</h3>
+            </div>
+
+            <div class="boxes">
+                <h3>Web Development</h3>
+            </div>
+
+            <div class="boxes">
+                <h3>C++ & Python Programming</h3>
+            </div>
         </div>
     </div>
 </body>

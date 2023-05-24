@@ -13,7 +13,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*styling the complete navigation bar*/
+/*---------------------------------HEADER & NAVIGATION MENU--------------------------*/
 
 /*the logo image*/
 .logo {
@@ -57,12 +57,12 @@ nav a:hover {
     margin: 20px;
 }
 
-/*----------title content styling----------*/
+/*------------------------------------HERO SECTION-----------------------------------------*/
 
 /*main-image positioning*/
 aside img {
     float: right;
-    padding-right: 0px;
+    padding-left: 360px;
     width: 30%;
     height: 60%;
 }
@@ -77,4 +77,150 @@ aside img {
     font-size: 20px;
     padding-left: 120px;
     color: #f8f0fb;
+}
+
+/*name size and positioning*/
+.page-headline .my-name {
+    font-size: 100px;
+    color: #65afff;
+    padding-left: 120px;
+    padding-top: 7px;
+    font-weight: bold;
+}
+
+/*short paragraph styling and positioning*/
+.shortpara {
+    padding-left: 120px;
+    padding-top: 50px;
+    color: #f8f0fb;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+/*hero button styling and positioning*/
+.page-headline button {
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 7px 7px 3px #000000;
+    padding: 20px;
+    margin-left: 120px;
+    margin-top: 80px;
+    font-size: 18px;
+    background-color: #466886;
+    color: #f8f0fb;
+}
+
+/*hero button on hover*/
+.page-headline button:hover {
+    background-color: #f8f0fb;
+    color: #466886;
+}
+
+/*-----------------------------ABOUT ME SECTION-----------------------------------------------------*/
+
+/*background for about-me section*/
+.about-me {
+    background-color: #65afff;
+    margin-top: 40%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 15%;
+    box-shadow: 30px 30px 15px #0D1321;
+}
+
+/*setting the grid display for the about me section*/
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*about me picture size and positioning*/
+.col-1 {
+    flex-basis: 40%;
+}
+
+.col-1 img {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    left: 5%;
+    top: 7%;
+    bottom: 10%;
+    border-radius: 15px;
+}
+
+/*about me subheading and paragraph positioning*/
+.col-2 {
+    flex-basis: 50%;
+}
+
+/*subheading size and styles*/
+.col-2 .title-aboutme {
+    font-size: 52px;
+    color: #0D1321;
+    position: relative;
+    top: 17%;
+}
+
+.col-2 .my-info {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 30%;
+}
+
+/*about me button styling and positioning*/
+.col-2 button {
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 7px 7px 3px #000000;
+    padding: 20px;
+    margin-top: 100px;
+    font-size: 18px;
+    background-color: #466886;
+    color: #f8f0fb;
+}
+
+/*about me button on hover*/
+.col-2 button:hover {
+    background-color: #f8f0fb;
+    color: #466886;
+}
+
+
+/*-----------------------SERVICES SECTION---------------------------*/
+
+/*services heading*/
+.services {
+    margin-top: 1200px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f8f0fb;
+}
+
+/*layout for the three boxes*/
+.layout {
+    display: grid;
+    grid-template-columns: 620px 620px 620px;
+    grid-template-rows: 250px 250px 250px;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 200px;
+}
+
+.layout .boxes {
+    background-color: #65afff;
+    border: none;
+    color: #0D1321;
+    display: flex;
+    border-radius: 15px;
+    font-size: 22px;
 }
