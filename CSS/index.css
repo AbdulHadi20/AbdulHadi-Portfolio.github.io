@@ -207,12 +207,13 @@ aside img {
 
 /*layout for the three boxes*/
 .layout {
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 620px 620px 620px;
-    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 200px 200px 200px;
     gap: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
     margin-top: 200px;
 }
 
@@ -223,4 +224,18 @@ aside img {
     display: flex;
     border-radius: 15px;
     font-size: 22px;
+    text-align: center;
+}
+
+.boxes h3 {
+    margin-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.boxes img {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
