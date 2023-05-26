@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/index.css"> <!--link to external css file, for styling purposes-->
+    <link rel="stylesheet" href="index.css"> <!--link to external css file, for styling purposes-->
     <script src="https://kit.fontawesome.com/e5dccc8960.js" crossorigin="anonymous"></script>
     <!--linking with the online icon kit on www.fontawesome.com-->
     <title>AbdulHadi's Portfolio</title> <!--title displayed on title bar-->
@@ -24,11 +24,10 @@
         <nav> <!--navigation links for the website-->
             <a href="#" class="active">Home</a>
             <!--link with the class:active to indicate the user is on current page -->
-            <a href="HTML/services.html">Services</a> <!--other navigation links-->
-            <a href="HTML/projects.html">Projects</a>
-            <a href="HTML/contact.html">Contact Me</a>
-            <a href="HTML/aboutme.html">About Me</a>
-            <a href="HTML/resume.html">Resume</a>
+            <a href="Pages/services.html">Services</a> <!--other navigation links-->
+            <a href="Pages/projects.html">Projects</a>
+            <a href="Pages/aboutme.html">About Me</a><!--drop down with contactme-->
+            <a class="btn" href="Pages/resume.html" target="_blank">Resume</a>
         </nav>
     </header>
 
@@ -39,7 +38,7 @@
     </aside>
 
     <div class="page-headline"> <!--div tag for the hero section texts-->
-        <h1 class="my-name">ABDULHADI</h1> <!--using the heading tag to display name larger-->
+        <h1 class="my-name" data-text="ABDULHADI">ABDULHADI</h1> <!--using the heading tag to display name larger-->
 
         <p class="shortpara"> <!--paragraph tag to display short information-->
             I am a Creative Computing Intern, I can work with C++, Python programming <br>
@@ -48,7 +47,9 @@
         </p>
 
         <button> <!--button tag to take us to about me page-->
-            Learn More <i class="fa-solid fa-arrow-right"></i>
+            <a href="Pages/aboutme.html">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
             <!--text + the i tag for the icons taken from the internet-->
         </button>
 
@@ -59,7 +60,7 @@
     <div class="about-me">
         <div class="grid">
             <div class="col-1">
-                <img src="Media/about-me.jpeg" alt="about-me-pic">
+                <img src="Media/about-me-img.jpeg" alt="about-me-pic">
             </div>
 
             <div class="col-2">
