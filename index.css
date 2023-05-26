@@ -113,7 +113,7 @@ aside img {
     color: #65afff;
     -webkit-text-stroke: 0.1vw #65afff;
     overflow: hidden;
-    animation: animate 10s linear infinite;
+    animation: animate 5s linear infinite;
 }
 
 @keyframes animate {
@@ -167,12 +167,12 @@ aside img {
     background-color: #65afff;
     margin-top: 45%;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
     position: absolute;
-    top: 20%;
-    left: 7%;
-    right: 7%;
+    top: 30%;
+    left: 10%;
+    right: 10%;
     box-shadow: 30px 30px 15px #0D1321;
 }
 
@@ -190,11 +190,11 @@ aside img {
 
 .col-1 img {
     width: 100%;
-    height: 55%;
+    height: 70%;
     position: relative;
     left: 5%;
-    top: 7%;
-    bottom: 10%;
+    top: 17%;
+    bottom: 15%;
     border-radius: 15px;
 }
 
@@ -225,9 +225,9 @@ aside img {
     border-radius: 15px;
     border: none;
     box-shadow: 7px 7px 3px #000000;
-    padding: 15px;
-    margin-top: 5%;
-    font-size: 14px;
+    padding: 14px;
+    margin-top: 7%;
+    font-size: 12px;
     background-color: #466886;
     color: #f8f0fb;
 }
@@ -242,8 +242,8 @@ aside img {
 /*-----------------------SERVICES SECTION---------------------------*/
 
 /*services heading*/
-.services {
-    margin-top: 1200px;
+.service {
+    margin-top: 55%;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -251,36 +251,61 @@ aside img {
 }
 
 /*layout for the three boxes*/
-.layout {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 500px 500px 500px;
-    grid-template-rows: 200px 200px 200px;
-    gap: 20px;
-    padding-left: 120px;
-    padding-right: 120px;
-    margin-top: 200px;
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 48vw;
+    overflow: hidden;
 }
 
-.layout .boxes {
+.cards {
+    position: absolute;
+    width: 50%;
+    height: 63%;
+    text-align: justify;
+    margin-top: 7%;
     background-color: #65afff;
     border: none;
-    color: #0D1321;
-    display: flex;
-    border-radius: 15px;
-    font-size: 22px;
-    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    left: calc(30% - 90px);
+    transition: 0.5s;
+    top: 0;
 }
 
-.boxes h3 {
+#next,
+#previous {
+    position: absolute;
+    top: 50%;
+    color: #f8f0fb;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    left: 10%;
+}
+
+#next {
+    left: unset;
+    right: 10%;
+}
+
+.cards h3 {
     margin-top: 10px;
     padding-left: 15px;
     display: flex;
     justify-content: center;
 }
 
-.boxes img {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
+.cards .box {
+    padding: 5%;
+    width: 50%;
+    height: 30%;
+    margin-left: 23%;
+    margin-top: 3%;
+    border: 7px;
+}
+
+.cards p {
+    text-align: center;
 }
