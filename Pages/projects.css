@@ -1,0 +1,78 @@
+/*for the projects page of the website*/
+
+/**/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+/*styling the body*/
+body {
+    background-color: #0D1321;
+    font-family: 'Montserrat';
+}
+
+/*---------------------------------HEADER & NAVIGATION MENU--------------------------*/
+
+/*the logo image*/
+.logo {
+    margin: 2.5%;
+    padding-left: 30px;
+    height: 90px;
+    border-radius: 10px 10px;
+    box-shadow: 7px 7px 5px;
+}
+
+/*the navigation links position*/
+nav {
+    float: right;
+    padding: 5%;
+    margin: 0.3%;
+}
+
+/*the navigation links styling*/
+a {
+    padding: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*styling the button on navigation menu*/
+.btn {
+    background: solid;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    background-color: #65afff;
+    color: #0D1321;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*navigation button hover*/
+.btn:hover {
+    background-color: #466886;
+    color: #f8f0fb;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*hover effect on navigation links on nav bar*/
+nav a:hover {
+    background-color: #f8f0fb;
+    border-radius: 20px;
+    color: #0D1321;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*indicates active page*/
+.active {
+    background-color: #466886;
+    border-radius: 20px;
+    color: #0D1321;
+    padding: 10px;
+    margin: 10px;
+}
