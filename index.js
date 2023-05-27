@@ -1,41 +1,49 @@
-/*let items = document.querySelectorAll('.carousel .cards');
-let next = document.getElementById('next');
-let previous = document.getElementById('previous');
+//javascript for the cards carousel
 
-let active = 3;
-function carouselfun() {
-    let stt = 0;
-    for (var i = active + 1; i < items.length; i++) {
-        stt++;
-        items[i].style.transform = `transateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
-        items[i].style.zIndex = -stt;
+const cards = document.getElementsByClassName("cards");
+const nxtBtn = document.getElementById("next");
+const prvBtn = document.getElementById("previous");
+
+let pos = 0;
+
+const numOfCards = cards.length;
+
+//to hide the slides not to be shown 
+function hideCards() {
+    for (const card of cards) {
+        card.classList.remove("visible");
+        card.classList.add("hidden");
     }
 }
-carouselfun();
-*/
 
+//for the next button functionality
+const nextSlide = function (e) {
+    hideCards();
 
-let card_index = 1;
-showcards(card_index);
-
-function nextSlide(n) {
-    showcards(card_index += n);
+    //checks if last card has been reached
+    if (pos === numOfCards - 1) {
+        pos = 0; //back to first card
+    } else {
+        pos++; //moves to next card
+    }
+    //now, to make the current card visible again
+    cards[pos].classList.add("visible");
 }
 
-function activeSlide(n) {
-    showcards(card_index = n);
+const prevSlide = function (e) {
+    hideCards();
+
+    //checks if the first card has been reached
+    if (pos === 0) {
+        pos = numOfCards - 1; //moves to the last card
+    } else {
+        pos--; //moves to a previous card
+    }
+    //now, making the current card visible again
+    cards[pos].classList.add("visible");
 }
 
-function displaySlides(n) {
-    let i;
-    let cards = document.getElementsByClassName("cards");
-}
+//callbacks for the buttons
 
-if (n > cards.length) { card_index = 1 }
-if (n < 1) { card_index = cards.length }
-for (i = 0; i < cards.length; i++) {
-    cards[i].style.display = "none";
-}
-
-cards[card_index - 1].style.display = "block";
-
+nxtBtn.addEventListener("click", nextSlide);
+prvBtn.addEventListener("click", prevSlide);

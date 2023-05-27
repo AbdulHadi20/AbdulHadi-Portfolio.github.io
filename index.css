@@ -310,3 +310,14 @@ aside img {
 .cards p {
     text-align: center;
 }
+
+/*to show the current card*/
+.cards .visible {
+    display: block;
+}
+
+/*to hide the cards not being viewed*/
+.carousel .cards,
+.carousel .hidden {
+    display: none;
+}
