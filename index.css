@@ -126,7 +126,7 @@ aside img {
 
     70%,
     90% {
-        width: 100%;
+        width: 95%;
     }
 }
 
@@ -258,6 +258,7 @@ aside img {
     overflow: hidden;
 }
 
+/*styling the cards background*/
 .cards {
     position: absolute;
     width: 50%;
@@ -273,51 +274,124 @@ aside img {
     top: 0;
 }
 
-#next,
-#previous {
-    position: absolute;
-    top: 50%;
-    color: #f8f0fb;
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
-    font-weight: bold;
-    left: 10%;
-    cursor: pointer;
+/*hides the images not being used*/
+.carousel .cards,
+.carousel .cards-hidden {
+    display: none;
 }
 
-#next {
-    left: unset;
-    right: 10%;
+/*shows current slide*/
+.carousel .cards-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
 }
 
-.cards h3 {
-    margin-top: 10px;
-    padding-left: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.cards .box {
+/*styling the image*/
+.carousel .cards img {
     padding: 5%;
     width: 50%;
     height: 30%;
     margin-left: 23%;
     margin-top: 3%;
-    border: 7px;
+    border: 10px;
 }
 
-.cards p {
+/*aligning the text in center*/
+.cards p,
+.cards h3 {
     text-align: center;
 }
 
-/*to show the current card*/
-.cards .visible {
-    display: block;
+/* next, previous buttons styling */
+.carousel .carousel_functions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-/*to hide the cards not being viewed*/
-.carousel .cards,
-.carousel .hidden {
-    display: none;
+.carousel .carousel_functions button {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #65afff;
+    border-radius: 50px;
+    margin: 10%;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*styling the button in the cards*/
+.butun button {
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 7px 7px 3px #000000;
+    padding: 10px;
+    margin-top: 3%;
+    font-size: 10px;
+    background-color: #466886;
+    color: #f8f0fb;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+/*--------------------------------------------FOOTER SECTION-------------------------------------------------------*/
+
+/*footer background styling*/
+footer {
+    background-color: #466886;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+/*coyright paragraph styling*/
+footer p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 2%;
+    line-height: 150%;
+}
+
+/*button for email*/
+.footer {
+    background-color: #000000;
+    padding: 1.2%;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    margin-left: 46%;
+}
+
+/*the image links for socials*/
+.social-links {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    margin-left: 42%;
+    margin-top: 1.5%;
+}
+
+/*setting the size for the social icons*/
+#icons {
+    font-size: 30px;
+}
+
+/*styling the links in footer*/
+.nav-links {
+    text-align: center;
+    padding: 2%;
 }

@@ -1,49 +1,49 @@
-//javascript for the cards carousel
+// for the carousel in the main page of the website
 
+//calling the variables by class names and ID from the html file
 const cards = document.getElementsByClassName("cards");
-const nxtBtn = document.getElementById("next");
-const prvBtn = document.getElementById("previous");
+const nxtBtn = document.getElementById("next_btn");
+const prvBtn = document.getElementById("prev_btn");
+const dots = document.getElementsByClassName("dot");
+let position = 0; //setting the initial index position
+const numberOfCards = cards.length;
 
-let pos = 0;
-
-const numOfCards = cards.length;
-
-//to hide the slides not to be shown 
-function hideCards() {
+function hideAllCards() {
+    // hiding all cards not to be viewed
     for (const card of cards) {
-        card.classList.remove("visible");
-        card.classList.add("hidden");
+        card.classList.remove("cards-visible");
+        card.classList.add("cards-hidden");
     }
 }
 
-//for the next button functionality
-const nextSlide = function (e) {
-    hideCards();
+const moveToNxtCard = function (e) {
+    hideAllCards(); //calling the function 
 
-    //checks if last card has been reached
-    if (pos === numOfCards - 1) {
-        pos = 0; //back to first card
+    // conditional statements if last slide has been reached
+    if (position === numberOfCards - 1) {
+        position = 0; //goes to the first slide
     } else {
-        pos++; //moves to next card
+        // to next slide
+        position++;
     }
-    //now, to make the current card visible again
-    cards[pos].classList.add("visible");
+    // making the current slide viewable
+    cards[position].classList.add("cards-visible");
+
 }
 
-const prevSlide = function (e) {
-    hideCards();
+const moveToPrevCard = function (e) {
+    hideAllCards();
 
-    //checks if the first card has been reached
-    if (pos === 0) {
-        pos = numOfCards - 1; //moves to the last card
+    // conditions to check wether we are on the first slide
+    if (position === 0) {
+        position = numberOfSlides - 1; // switches to last slide
     } else {
-        pos--; //moves to a previous card
+        // moves to previous slide
+        position--;
     }
-    //now, making the current card visible again
-    cards[pos].classList.add("visible");
+    // making the current slide visible
+    cards[position].classList.add("cards-visible");
 }
 
-//callbacks for the buttons
-
-nxtBtn.addEventListener("click", nextSlide);
-prvBtn.addEventListener("click", prevSlide);
+nxtBtn.addEventListener("click", moveToNxtCard);  //action when clicked on next button
+prvBtn.addEventListener("click", moveToPrevCard); //action when clicked on previous button
