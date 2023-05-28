@@ -76,3 +76,67 @@ nav a:hover {
     padding: 10px;
     margin: 10px;
 }
+
+h1 {
+    color: #f8f0fb;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+p {
+    color: #f8f0fb;
+    font-size: 16px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+/*--------------------------------------------FOOTER SECTION-------------------------------------------------------*/
+
+/*footer background styling*/
+footer {
+    background-color: #466886;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+/*coyright paragraph styling*/
+footer p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 2%;
+    line-height: 150%;
+}
+
+/*button for email*/
+.footer {
+    background-color: #000000;
+    padding: 1.2%;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    margin-left: 46%;
+}
+
+/*the image links for socials*/
+.social-links {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    margin-left: 42%;
+    margin-top: 1.5%;
+}
+
+/*setting the size for the social icons*/
+#icons {
+    font-size: 30px;
+}
+
+/*styling the links in footer*/
+.nav-links {
+    text-align: center;
+    padding: 2%;
+}
