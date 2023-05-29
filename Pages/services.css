@@ -82,10 +82,10 @@ nav a:hover {
 .box {
     background-color: #65afff;
     margin-top: 7%;
-    margin-left: 10%;
-    margin-right: 10%;
     border-radius: 10px;
     padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 h3 {
@@ -101,12 +101,6 @@ p {
     padding: 4%;
 }
 
-#box-img {
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 3%;
-}
-
 button {
     background-color: #466886;
     color: #ffffff;
@@ -114,4 +108,56 @@ button {
     border: none;
     border-radius: 10px;
     margin-left: 35%;
+}
+
+#box-img {
+    margin-top: 7%;
+    align-self: center;
+}
+
+/*--------------------------------------------FOOTER SECTION-------------------------------------------------------*/
+
+/*footer background styling*/
+footer {
+    background-color: #466886;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+/*coyright paragraph styling*/
+footer p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 2%;
+    line-height: 150%;
+}
+
+/*button for email*/
+.footer {
+    background-color: #000000;
+    padding: 1.2%;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    margin-left: 46%;
+}
+
+/*the image links for socials*/
+.social-links {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    margin-left: 42%;
+    margin-top: 1.5%;
+}
+
+/*setting the size for the social icons*/
+#icons {
+    font-size: 30px;
+}
+
+/*styling the links in footer*/
+.nav-links {
+    text-align: center;
+    padding: 2%;
 }
