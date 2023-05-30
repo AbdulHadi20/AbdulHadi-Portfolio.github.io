@@ -1,0 +1,191 @@
+<!DOCTYPE html> <!--doctype html tag, indicates that the document is an html doc-->
+<html lang="en">
+
+<head> <!--head section, contains all the meta information and links with css files, helps with SEO-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!--link to external css file, for styling purposes-->
+    <script src="https://kit.fontawesome.com/e5dccc8960.js" crossorigin="anonymous"></script>
+    <!--linking with the online icon kit on www.fontawesome.com-->
+    <title>AbdulHadi's Portfolio</title> <!--title displayed on title bar-->
+</head>
+
+<body> <!--start of the body tag-->
+
+    <!---------------------------------------------HEADER AND NAVIGATION SECTION--------------------------------------->
+
+    <header> <!--header tag, contains heading logo, navigation links at the top of the page-->
+        <img src="Media/logo.png" alt="logo-image" class="logo"> <!--image tag for placing the logo image-->
+
+        <nav> <!--navigation links for the website-->
+            <a href="#" class="active">Home</a>
+            <!--link with the class:active to indicate the user is on current page -->
+            <a href="services.html">Services</a> <!--other navigation links-->
+            <a href="projects.html">Projects</a>
+            <a href="aboutme.html">About Me</a><!--drop down with contactme-->
+            <a class="btn" href="Media/AbdulHadi_Resume.pdf" target="_blank">Resume</a>
+        </nav>
+    </header>
+
+    <!-----------------------------------------------------HERO SECTION-------------------------------------------------->
+
+    <aside> <!--to display the image on the side of the page-->
+        <img src="Media/main-pic.png" alt="my-main-image"> <!--image to be displayed for the hero section-->
+    </aside>
+
+    <div class="page-headline"> <!--div tag for the hero section texts-->
+        <h1 class="my-name" data-text="ABDULHADI">ABDULHADI</h1> <!--using the heading tag to display name larger-->
+
+        <p class="shortpara"> <!--paragraph tag to display short information-->
+            I am a Creative Computing Intern, I can work with C++, Python programming <br>
+            languages. I can also work as a Web Developer. My most favorite work of all <br>
+            is the UI/UX Design. <br>
+        </p>
+
+        <button> <!--button tag to take us to about me page-->
+            <a href="aboutme.html">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <!--text + the i tag for the icons taken from the internet-->
+        </button>
+
+    </div>
+
+    <!--------------------------------------------------ABOUT ME SECTION----------------------------------------------------->
+
+    <div class="about-me"> <!--div class for the about me background-->
+        <div class="grid"> <!--div class grid, to align the image and text as desired, side by side-->
+            <div class="col-1"> <!--div class for column 1-->
+                <img src="Media/about-me-img.jpeg" alt="about-me-pic"> <!--image in the first column-->
+            </div>
+
+            <div class="col-2"> <!--div class for the coulmn 2-->
+                <h2 class="title-aboutme">About Me</h2> <!--subtitle for the about me section-->
+                <p class="my-info"> <!--paragraph tag with class-->
+                    My name is AbdulHadi. I am currently a student at Bath Spa University, <br>
+                    studying for a bachelor's degree in Creative Computing. From the start,<br>
+                    I was into computers and always wanted to create my own apps and websites. <br>
+                    I started my computer learning journey with HTML in Grade 8, then followed
+                    by basics of C#. Then I learned C++ in highschool and got pretty good at it.
+                    <br> <br>
+                    Now in Bath Spa University, I have learned Python, CSS, Javascript basics, <br>
+                    UI/UX Design. UI/UX is my favorite module in the university. I also have <br>
+                    learned how to effectively tell stories and how ideas are generated <br>
+                    and implemented. <br>
+                </p>
+
+                <button> <!--button to take us to about me page-->
+                    <a href="aboutme.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------SERVICES SECTION--------------------------------------------------------------->
+
+    <div class="services"> <!--services card background-->
+        <h1 class="service">SERVICES</h1> <!--title for the services section-->
+        <div class="carousel"> <!--div class for the carousel-->
+            <div class="cards cards-visible"> <!--div class for the cards-->
+                <h3>UI/UX DESIGN</h3> <!--subheading in the cards-->
+                <img src="Media/ui-ux image.jpg"> <!--image to be displayed-->
+                <p> <!--paragraph tag-->
+                    UI/UX Design is the creative process of designing <br>
+                    an app or website that appeals to the end user. I <br>
+                    I am an innovative and creative individual who <br>
+                    loves to help people design their desired apps <br>
+                    and websites. Check out my projects... <br>
+                </p>
+
+                <div class="butun"> <!--div tag for the button-->
+                    <button> <!--buuton tag-->
+                        <a href="projects.html">View Projects</a> <!--links with the projects page-->
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <h3>Web Development</h3>
+                <img src="Media/web-dev-img.jpg" class="box">
+                <p>
+                    Web development is the process of building websites <br>
+                    using HTML, CSS & Javascript. I have been working with <br>
+                    HTML since Grade 8, and currently started to develop <br>
+                    my skills in CSS and Javascript. Check out the <br>
+                    projects... <br>
+                </p>
+
+                <div class="butun">
+                    <button>
+                        <a href="projects.html">View Projects</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <h3>C++ & Python Programming</h3>
+                <img src="Media/c++-python.png" class="box">
+                <p>
+                    C++ and Python are programming languages used to <br>
+                    create amazing applications. I have basic knowledge <br>
+                    of both the languages and worked on some small problem <br>
+                    solving programs. Check out some projects...<br>
+                </p>
+
+                <div class="butun">
+                    <button>
+                        <a href="projects.html">View Projects</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel_functions"> <!--div class for the buttons for controlling the carousel-->
+                <button id="prev_btn" aria-label="Previous">
+                    < </button>
+                        <button id="next_btn" aria-label="Next">></button>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------FOOTER SECTION--------------------------------------------------->
+    <footer> <!--footer tag-->
+        <p> <!--paragraph tag-->
+            All Rights Reserved: Copyright © AbdulHadi, 2023 <br>
+            abdulhadi2003m@gmail.com <br>
+            +971 56 970 2218 <br>
+        </p>
+
+        <button class="footer"> <!--button for the footer-->
+            <a href="mailto:abdulhadi2003m@gmail.com">Email Me!</a>
+        </button>
+
+        <div class="social-links"> <!--div class for the social links-->
+            <a href="https://www.instagram.com/3bdlhxdi/" target="_blank">
+                <i class="fa-brands fa-instagram" id="icons"></i>
+            </a>
+
+            <a href="https://twitter.com/3bdulhxdi" target="_blank">
+                <i class="fa-brands fa-twitter" id="icons"></i>
+            </a>
+
+            <a href="https://github.com/AbdulHadi20" target="_blank">
+                <i class="fa-brands fa-github" id="icons"></i>
+            </a>
+        </div>
+
+        <div class="nav-links"> <!--div class for the links in the footer-->
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="Media/AbdulHadi_Resume.pdf">Resume</a>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script> <!--linking with the external javascript file-->
+</body>
+
+</html> <!--end of the html document-->
