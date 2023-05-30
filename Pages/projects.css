@@ -76,3 +76,102 @@ nav a:hover {
     padding: 10px;
     margin: 10px;
 }
+
+/*---------------------------------------MAIN BODY SECTION-------------------------------------------------------*/
+
+
+.card {
+    background-color: #466886;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    color: #f8f0fb;
+    padding: 5%;
+}
+
+p {
+    color: #f8f0fb;
+    margin-left: 5%;
+}
+
+h3 {
+    font-size: 38px;
+    margin-top: 4%;
+    margin-left: 5%;
+    color: #ffffff;
+}
+
+.projectinfo {
+    margin-top: 4%;
+    text-align: justify;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.display {
+    margin-left: 1%;
+    margin-top: 5%;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.cta a {
+    text-decoration: underline;
+    color: #65afff;
+}
+
+/*--------------------------------------------FOOTER SECTION-------------------------------------------------------*/
+
+/*footer background styling*/
+footer {
+    background-color: #466886;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+/*coyright paragraph styling*/
+footer p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 2%;
+    line-height: 150%;
+}
+
+/*button for email*/
+.footer {
+    background-color: #000000;
+    padding: 1.2%;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    margin-left: 46%;
+}
+
+/*the image links for socials*/
+.social-links {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    margin-left: 42%;
+    margin-top: 1.5%;
+}
+
+/*setting the size for the social icons*/
+#icons {
+    font-size: 30px;
+}
+
+/*styling the links in footer*/
+.nav-links {
+    text-align: center;
+    padding: 2%;
+}
